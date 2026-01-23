@@ -1,5 +1,3 @@
-import classNames from 'classnames'
-import { Star } from '../../assets/Star'
 import classes from './Header.module.css'
 import { Logo } from '../../components/Logo/Logo'
 
