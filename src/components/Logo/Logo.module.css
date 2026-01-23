@@ -1,0 +1,19 @@
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.logo__container {
+  display: flex;
+  align-items: center;
+  background-color: #308ce8;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.logo a {
+  color: #308ce8;
+  margin-left: 8px;
+}
