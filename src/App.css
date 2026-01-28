@@ -60,11 +60,18 @@ body,
   /* line-height: normal; */
   font-family: 'Inter', sans-serif;
   color: #161a1d;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll; /* чтобы страница скроллилась */
+  scrollbar-width: none; /* Firefox */
 }
 
 body {
   margin: 0; /* убирает стандартные 8px */
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
 }
 
 a {
