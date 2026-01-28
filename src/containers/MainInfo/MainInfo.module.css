@@ -1,0 +1,42 @@
+.mainInfo {
+  width: 1172px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  margin-top: 96px;
+}
+
+.mainInfo__img {
+  width: 576px;
+  border: 1px solid black;
+  border-radius: 14px;
+  margin-right: 32px;
+}
+
+.mainInfo__title {
+  font-size: 36px;
+}
+
+.mainInfo__description {
+  font-size: 18px;
+  color: #555e68;
+  margin-top: 16px;
+}
+
+.mainInfo__buttons {
+  display: flex;
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+.mainInfo__button_list {
+  margin-right: 16px;
+  background-color: #308ce8;
+  color: white;
+}
+
+.mainInfo__button_favorite {
+  background-color: white;
+  border: 1px solid #308ce8;
+  color: #308ce8;
+}
