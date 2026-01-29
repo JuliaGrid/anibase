@@ -8,10 +8,11 @@ import { AnimeCard } from '../../components/AnimeCard/AnimeCard'
 interface IAnimeCarousel {
   title?: string
   description?: string
+  buttonText?: string
 }
 
 export function AnimeCarousel(props: IAnimeCarousel) {
-  const { title, description } = props
+  const { title, description, buttonText } = props
 
   const swiperRef = useRef<SwiperClass | null>(null)
   const intervalId = useRef<number | null>(null)
@@ -65,7 +66,11 @@ export function AnimeCarousel(props: IAnimeCarousel) {
     <section className={classes.animeCarousel}>
       <div className={classes.animeCarousel__header}>
         <h2 className={classes.animeCarousel__title}>{title}</h2>
-        <button></button>
+        {buttonText && (
+          <button className={classes.animeCarousel__button}>
+            {buttonText}
+          </button>
+        )}
       </div>
       <article className={classes.animeCarousel__description}>
         {description}
@@ -80,25 +85,22 @@ export function AnimeCarousel(props: IAnimeCarousel) {
           spaceBetween={24}
           slidesPerView="auto"
           onSwiper={swiper => (swiperRef.current = swiper)}
-          className={classes.carousel__list}
+          noSwiping={true}
+          noSwipingClass="noSwiping"
         >
           <SwiperSlide className={classes.carousel__item}>
+            <AnimeCard isCarouselCard />
+          </SwiperSlide>
+          <SwiperSlide className={classes.carousel__item}>
+            <AnimeCard isCarouselCard />
+          </SwiperSlide>
+          <SwiperSlide className={classes.carousel__item}>
             <AnimeCard />
           </SwiperSlide>
           <SwiperSlide className={classes.carousel__item}>
-            {' '}
             <AnimeCard />
           </SwiperSlide>
           <SwiperSlide className={classes.carousel__item}>
-            {' '}
-            <AnimeCard />
-          </SwiperSlide>
-          <SwiperSlide className={classes.carousel__item}>
-            {' '}
-            <AnimeCard />
-          </SwiperSlide>
-          <SwiperSlide className={classes.carousel__item}>
-            {' '}
             <AnimeCard />
           </SwiperSlide>
           <SwiperSlide className={classes.carousel__item}>Слайд 6</SwiperSlide>

@@ -1,6 +1,7 @@
 .animeCarousel__header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .animeCarousel__title {
@@ -14,35 +15,20 @@
   margin-top: 26px;
 }
 
-.carousel {
+.animeCarousel__button {
+  background-color: white;
+  color: #308ce8;
+  border: 1px solid #308ce8;
+}
+
+/* .carousel {
   width: 100%;
   overflow: hidden;
   position: relative;
-}
+} */
 
 .carousel__item {
   flex: 0 0 240px;
   width: 240px;
   flex-shrink: 0;
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-.carousel__prev {
-  width: 100px;
-  position: absolute;
-  left: 0;
-  height: 100%;
-  border: 1px solid black;
-  z-index: 10;
-}
-
-.carousel__next {
-  width: 100px;
-  position: absolute;
-  right: 0;
-  height: 100%;
-  border: 1px solid black;
-  z-index: 10;
 }

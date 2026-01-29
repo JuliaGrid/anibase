@@ -1,0 +1,28 @@
+.animeCard {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.animeCard__wrapper {
+  padding: 16px;
+}
+
+.animeCard__description {
+  margin-top: 8px;
+}
+
+.animeCard__raiting {
+  display: flex;
+}
+
+.animeCard__score {
+  margin-left: 4px;
+}
+
+.animeCard__mainInfo {
+  display: flex;
+  justify-content: space-between;
+  color: #3f4548;
+  margin-top: 8px;
+}
