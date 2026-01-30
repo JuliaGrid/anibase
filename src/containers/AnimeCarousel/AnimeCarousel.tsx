@@ -79,7 +79,8 @@ export function AnimeCarousel(props: IAnimeCarousel) {
       <div
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
-        style={{ overflow: 'hidden' }}
+        // style={{ overflow: 'hidden' }}
+        className={classes.carousel}
       >
         <Swiper
           spaceBetween={24}
@@ -87,6 +88,7 @@ export function AnimeCarousel(props: IAnimeCarousel) {
           onSwiper={swiper => (swiperRef.current = swiper)}
           noSwiping={true}
           noSwipingClass="noSwiping"
+          style={{ overflowX: 'hidden', overflowY: 'visible' }}
         >
           <SwiperSlide className={classes.carousel__item}>
             <AnimeCard isCarouselCard />

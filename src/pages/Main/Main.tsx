@@ -1,4 +1,5 @@
 import { AnimeCarousel } from '../../containers/AnimeCarousel/AnimeCarousel'
+import { Footer } from '../../containers/Footer/Footer'
 import { Header } from '../../containers/Header/Header'
 import { MainInfo } from '../../containers/MainInfo/MainInfo'
 import classes from './Main.module.css'
@@ -17,6 +18,7 @@ export function Main() {
           />
         </div>
       </main>
+      <Footer />
     </>
   )
 }
