@@ -3,6 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { Main } from './pages/Main/Main'
+import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
+import { AnimeList } from './pages/AnimeList/AnimeList'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,7 +27,12 @@ function App() {
         </p>
       </div>
       <p className="read-the-docs">Click on the Vite and React logos to learn more</p> */}
-      <Main />
+      <BrowserRouter>
+        <Routes>
+          <Route path="*" element={<Main />} />
+          <Route path="animeList" element={<AnimeList />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }

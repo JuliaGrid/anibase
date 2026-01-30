@@ -1,5 +1,6 @@
 import classes from './Header.module.css'
 import { Logo } from '../../components/Logo/Logo'
+import { Link } from 'react-router-dom'
 
 export function Header() {
   return (
@@ -10,8 +11,12 @@ export function Header() {
             <li className={classes.menu__item}>
               <Logo />
             </li>
-            <li className={classes.menu__item}>Главная</li>
-            <li className={classes.menu__item}>Поиск</li>
+            <li className={classes.menu__item}>
+              <Link to="/">Главная</Link>
+            </li>
+            <li className={classes.menu__item}>
+              <Link to="/animeList">Список аниме</Link>
+            </li>
             <li className={classes.menu__item}>Избранное</li>
           </ul>
         </nav>
