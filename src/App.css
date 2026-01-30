@@ -69,11 +69,6 @@ body {
   margin: 0; /* убирает стандартные 8px */
 }
 
-main {
-  max-width: 1200px;
-  margin: auto;
-}
-
 a {
   font-weight: normal;
   color: black;
