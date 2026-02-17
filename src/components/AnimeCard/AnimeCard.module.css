@@ -26,3 +26,9 @@
   color: #3f4548;
   margin-top: 8px;
 }
+
+.animeCard img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
